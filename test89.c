@@ -22,3 +22,5 @@ int main(void)
     printf("%d的階乘是:%ld\n",num,fact(num));
     return 0;
 }
+//普通程序員用迭代，天才程序員用遞歸
+//用遞歸難讀，平常用迭代就好
