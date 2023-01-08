@@ -1,3 +1,4 @@
+//申請任意尺寸的內存空間malloc
 #include<stdio.h>
 #include<stdlib.h>
 int main(void)
