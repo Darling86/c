@@ -49,9 +49,22 @@ void printBook(struct Book *book)
     printf("出版社：%s\n",book->publisher);
 }
 
-void initLibrary(struct Book*library[])
+void initLibrary(struct Book *library[])
 {
     int i;
+
+    for ( i = 0; i < MAX_SIZE; i++)
+    {
+        library[i]=NULL;
+    
+    }
+    
+}
+
+void printLibrary(struct Book *library[])
+{
+    int i;
+
     for ( i = 0; i < MAX_SIZE; i++)
     {
         if(library[i]!=NULL)
@@ -63,9 +76,10 @@ void initLibrary(struct Book*library[])
     
 }
 
-void releaseLibrary(struct Book*library[])
+void releaseLibrary(struct Book *library[])
 {
     int i;
+
     for ( i = 0; i < MAX_SIZE; i++)
     {
         if(library[i]!=NULL)
